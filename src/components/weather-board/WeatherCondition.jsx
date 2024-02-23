@@ -5,6 +5,7 @@ import cloud from '../../assets/icons/cloud.svg'
 import windPic from '../../assets/icons/wind.svg'
 import { useContext } from 'react'
 import { WeatherContext } from '../../contex'
+
 const WeatherCondition = () => {
 
     const { weatherData } = useContext(WeatherContext);
