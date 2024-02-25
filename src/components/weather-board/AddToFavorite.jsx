@@ -13,11 +13,12 @@ const AddToFavorite = () => {
     const { weatherData } = useContext(WeatherContext);
     const { longitude, latitude, location } = weatherData;
 
+    // when the UI mount in the first time then if the localStorage have favorites array then, to synchoronize with UI: 
     useEffect(()=>{
         const found = favorites.find(fav => fav.location === location)
         setIsFavorite(found);
 
-    },[])
+    },[favorites, location])
 
     const handleFavorite = () => {
 
