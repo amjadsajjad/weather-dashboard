@@ -27,9 +27,9 @@ const getLocation = () => {
 
 const getLocationByName = (searchLocation) => {
 
-    if (!searchLocation) {
-        return null;
-    }
+    // if (!searchLocation) {
+    //     return null;
+    // }
     
     const filteredLocation = LocationData.find(item => item.location === searchLocation);
     console.log(filteredLocation);
